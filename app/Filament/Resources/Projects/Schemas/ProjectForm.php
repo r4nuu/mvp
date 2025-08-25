@@ -31,13 +31,6 @@ class ProjectForm
                     ->maxValue(now()->year)
                     ->placeholder('e.g., 2020'),
                     
-                TextInput::make('number_of_available_units')
-                    ->label('Number of Available Units')
-                    ->required()
-                    ->numeric()
-                    ->minValue(1)
-                    ->placeholder('e.g., 50'),
-                    
                 TextInput::make('owner_phone_number')
                     ->label('Owner Phone Number (Optional)')
                     ->tel()
